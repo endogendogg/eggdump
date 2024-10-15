@@ -1,0 +1,91 @@
+body {
+    font-family: 'Georgia', serif; /* Using a classic serif font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f7f3e8; /* Light cream background */
+    color: #3b2a1f; /* Dark brown text */
+}
+
+header {
+    background: #5b3d1f; /* Deep brown background */
+    color: #fff;
+    padding: 40px; /* Increased padding for a bolder header */
+    text-align: center;
+    border-bottom: 5px solid #d2c292; /* Light border at the bottom */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px; /* Increased spacing for better readability */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    position: relative; /* For hover effect */
+    font-size: 1.2em; /* Increased font size for prominence */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #d2c292; /* Vintage gold effect */
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: #d2c292; /* Change text color on hover */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 25px; /* Increased padding for sections */
+    background: #ffffff; /* White background for sections */
+    border: 2px solid #d2c292; /* Thicker border around sections for robustness */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for more pop */
+}
+
+section h2 {
+    font-family: 'Georgia', serif; /* Consistent serif font */
+    border-bottom: 3px solid #d2c292; /* Vintage line under headings */
+    padding-bottom: 10px;
+    font-size: 1.5em; /* Increased font size for headings */
+    color: #5b3d1f; /* Matching deep brown color for headings */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+footer {
+    text-align: center;
+    padding: 20px; /* Increased padding for footer */
+    background: #5b3d1f; /* Deep brown background */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1em; /* Increased font size for footer */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}

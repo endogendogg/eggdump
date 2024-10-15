@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPYBARA - Information</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 120px;">ABOUT CAPYBARA</h1>
+        <nav>
+            <ul>
+                <li><a href="indexcapybara.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="text-align: justify;">
+        <section id="information">
+            <h2>APA ITU KAPIBARA?</h2>
+            <p style="padding: 5px; line-height: 35px;"><big>Kapibara adalah hewan pengerat terbesar di dunia yang habitat aslinya di daerah-daerah genangan air seperti di Amerika Tengah dan Selatan.
+                Kapibara adalah hewan pengerat terbesar di dunia, asli dari Amerika Selatan. Mereka termasuk dalam keluarga yang sama dengan tikus dan marmot, tetapi ukurannya jauh lebih besar. Capybara memiliki tubuh yang bulat dan kuat, dengan panjang mencapai sekitar 1,2 meter dan berat antara 35-66 kg.
+                Capybara adalah keturunan dari hewan pengerat prasejarah yang berevolusi untuk bertahan di habitat yang penuh air. Mereka beradaptasi dengan baik, seperti kaki yang sedikit berselaput untuk berenang dan kemampuan menahan napas di bawah air. Fosil capybara prasejarah telah ditemukan di berbagai situs arkeologi di Amerika Selatan, yang menunjukkan bahwa mereka sudah ada selama jutaan tahun.</big></p>
+                <br>
+            <h2>SEJARAH KAPIBARA</h2>
+            <p style="padding: 5px; line-height: 35px;"><big>Evolusi capybara bermula dari nenek moyang pengerat purba di Amerika Selatan, yang berevolusi menjadi hewan semi-akuatik besar dari subkeluarga Hydrochoerinae. Adaptasi fisik utama capybara, seperti ukuran tubuh besar, kaki berselaput, dan kemampuan berenang, memungkinkan mereka bertahan di habitat perairan seperti sungai dan rawa. Gigi yang terus tumbuh serta kemampuan berkelompok juga merupakan hasil evolusi yang mendukung pola hidup herbivora mereka. Capybara menjadi salah satu spesies pengerat yang paling sukses beradaptasi dengan lingkungan semi-akuatik di daerah tropis dan subtropis, bertahan hingga zaman modern meskipun banyak spesies pengerat besar lainnya punah.</big></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Unique Site. All rights reserved.</p>
+    </footer>
+
+    <script>
+        ('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const targetPosition = targetElement.offsetTop;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

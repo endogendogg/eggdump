@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPYBARA</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 150px;">CAPYBARA</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>APA ITU CAPYBARA?</h1>
+            <p>This is the about section where you can introduce yourself or your site.</p>
+        </section>
+
+        <section id="information">
+            <h2>Information</h2>
+            <p>This section contains important information about the site or topic.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>This section showcases images or other media relevant to your site.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Unique Site. All rights reserved.</p>
+    </footer>
+    
+<script>('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        const targetPosition = targetElement.offsetTop;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</body>
+</html>
